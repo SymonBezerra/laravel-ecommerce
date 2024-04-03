@@ -196,7 +196,7 @@ class OrderResource extends Resource
                 SelectColumn::make('status')
                 ->options([
                     'new' => 'New',
-                    'processi   ng' => 'Processing',
+                    'processing' => 'Processing',
                     'shipped' => 'Shipped',
                     'delivered' => 'Delivered',
                     'canceled' => 'Canceled'
@@ -225,7 +225,7 @@ class OrderResource extends Resource
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([
-                    Tables\Actions\DeleteBulkAction::make(),
+                Tables\Actions\DeleteBulkAction::make(),
                 ]),
             ]);
     }
